@@ -116,4 +116,4 @@ with gr.Blocks() as demo:
         outputs=[panel_gallery, text_output]
     )
 
-demo.launch()
+demo.launch() 
