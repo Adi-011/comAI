@@ -102,7 +102,7 @@ def process_comic(image):
 
 
 with gr.Blocks() as demo:
-    gr.Markdown("# 📖 Comic Panel OCR")
+    gr.Markdown("# Comic Panel OCR")
 
     image_input = gr.Image(type="pil", label="Upload comic page")
     extract_btn = gr.Button("Detect Panels & OCR")
