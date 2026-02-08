@@ -6,7 +6,7 @@ from panel_ocr import process_comic, summarize_story
 
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
-def ocr_image(image):
+def ocr_image(image): 
     if image is None:
         return ""
 
@@ -41,8 +41,5 @@ with gr.Blocks() as demo:
         inputs=ocr_output,
         outputs=story_output
     )
-
-demo.launch()
-
 
 demo.launch()
